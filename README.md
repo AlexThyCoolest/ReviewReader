@@ -4,8 +4,6 @@
 
 ReviewReader is an advanced Flask-based web application that leverages machine learning to analyze Amazon product reviews, helping users make informed purchasing decisions.
 
-ReviewReader Demo
-
 ## 🌟 Features
 
 - 🔍 Scrape and analyze Amazon product reviews in real-time
@@ -47,27 +45,21 @@ Before you begin, ensure you have met the following requirements:
    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
    ```
 
-3. **Install required packages**
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Set up the Chrome WebDriver**
+3. **Set up the Chrome WebDriver**
 
    Ensure you have the Chrome browser installed, then download the appropriate [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) for your system and add it to your PATH.
 
-5. **Run the application**
+4. **Run the application**
 
    ```bash
    python app.py
    ```
 
-   The application will be available at `http://localhost:5000`.
+   The application will be available at `http://localhost:2020`.
 
 ## 💻 Usage
 
-1. Open your web browser and navigate to `http://localhost:5000`.
+1. Open your web browser and navigate to `http://localhost:2020`.
 2. Enter the name of an Amazon product you want to analyze.
 3. Wait for the analysis to complete (you'll be entertained with jokes during this time!).
 4. Review the results, including:
@@ -81,8 +73,7 @@ Before you begin, ensure you have met the following requirements:
 ```
 OYT/
 │
-├── app.py                 # Main Flask application
-├── requirements.txt       # Python dependencies
+├── app.py                 # Main Flask application 
 ├── README.md              # Project documentation
 ├── static/                # Static files (CSS, JS, images)
 │   ├── css/
@@ -92,9 +83,10 @@ OYT/
 │   ├── index.html
 │   ├── loading.html
 │   └── results.html
-└── models/                # Pre-trained ML models and data
-    ├── review_classifier.pkl
-    └── amazon_reviews.csv
+└── model/                # Pre-trained ML models and data
+    ├── model.pkl
+    ├── oprimal_threshold.pkl
+    └── vectorizer.pkl
 ```
 
 ## 🧠 How It Works
@@ -110,8 +102,8 @@ OYT/
 
 | Metric | Score |
 |--------|-------|
-| Accuracy | 92% |
-| Precision | 0.89 |
+| Accuracy | 89% |
+| Precision | 90% |
 | Recall | 0.94 |
 | F1 Score | 0.91 |
 
@@ -125,15 +117,11 @@ Contributions to ReviewReader are welcome! Please follow these steps:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 📞 Contact
 
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter) - email@example.com
+Alex Agboola - [My Portfolio](https://alexagboola.com) - alexagboolacodes@gmail.com
 
-Project Link: [https://github.com/yourusername/ReviewReader](https://github.com/yourusername/ReviewReader)
+Project Link: [https://github.com/AlexThyCoolest/ReviewReader](https://github.com/AlexThyCoolest/ReviewReader)
 
 ## 🙏 Acknowledgements
 
