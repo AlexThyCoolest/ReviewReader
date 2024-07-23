@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .loading-bar {
+            width: 100%;
+            background-color: #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .loading-bar-inner {
+            width: 0;
+            height: 30px;
+            background-color: #4CAF50;
+            animation: loading 10s linear forwards;
+        }
+
+        @keyframes loading {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+
+        .joke {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        body,
+        html {
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="joke" id="joke"></div>
+    </div>
+
+    <script>
+        const joke = {{ jokes| tojson }};
+        let jokeIndex = 0;
+        const jokeElement = document.getElementById('joke');
+
+        function showNextJoke() {
+            jokeElement.textContent = joke[jokeIndex];
+            jokeIndex = (jokeIndex + 1) % joke.length;
+        }
+
+        setInterval(showNextJoke, 6000);
+        showNextJoke();
+
+        setTimeout(() => {
+            window.location.href = `/results/${encodeURIComponent('{{ product_name }}')}`;
+        }, 70000); // Redirect after 10 seconds
+    </script>
+</body>
+
+</html>
