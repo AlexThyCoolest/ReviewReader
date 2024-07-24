@@ -61,8 +61,6 @@ Before you begin, ensure you have met the following requirements:
 
 ### OR
 
-### Project Setup Guide
-
 #### Set up a GitHub Codespace
 
 1. **Open Your Repository**: Go to the GitHub repository where your project is located.
