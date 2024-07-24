@@ -59,6 +59,23 @@ Before you begin, ensure you have met the following requirements:
 
    The application will be available at `http://localhost:2020`.
 
+### OR
+
+1. **Set up a Github codespace**
+   
+
+2. **Download dependencies**
+
+   ```bash
+   pip install flask selenium fake-useragent pandas numpy nltk textblob
+   ```
+
+3. **Run Python**
+
+   ```bash
+   python app.py
+   ```
+
 ## 💻 Usage
 
 1. Open your web browser and navigate to `http://localhost:2020`.
