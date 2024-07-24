@@ -4,6 +4,8 @@
 
 ReviewReader is an advanced Flask-based web application that leverages machine learning to analyze Amazon product reviews, helping users make informed purchasing decisions.
 
+[![A 1 minute demo of the website](https://github.com/user-attachments/assets/dbb7f2c5-5d1f-4e3b-8bf9-38f25bd7c8f8)](https://github-production-user-asset-6210df.s3.amazonaws.com/118056225/351786228-dbb7f2c5-5d1f-4e3b-8bf9-38f25bd7c8f8.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240724%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240724T155535Z&X-Amz-Expires=300&X-Amz-Signature=ae1b9cc088fbfbdbeda5e39f7dd02af67f2b761098259232b168c412ec46fb67&X-Amz-SignedHeaders=host&actor_id=118056225&key_id=0&repo_id=832837105)
+
 ## 🌟 Features
 
 - 🔍 Scrape and analyze Amazon product reviews in real-time
@@ -56,6 +58,23 @@ Before you begin, ensure you have met the following requirements:
    ```
 
    The application will be available at `http://localhost:2020`.
+
+### OR
+
+1. **Set up a Github codespace**
+   
+
+2. **Download dependencies**
+
+   ```bash
+   pip install flask selenium fake-useragent pandas numpy nltk textblob
+   ```
+
+3. **Run Python**
+
+   ```bash
+   python app.py
+   ```
 
 ## 💻 Usage
 
