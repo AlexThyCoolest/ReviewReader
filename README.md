@@ -61,16 +61,28 @@ Before you begin, ensure you have met the following requirements:
 
 ### OR
 
-1. **Set up a Github codespace**
-   
+### Project Setup Guide
 
-2. **Download dependencies**
+#### Set up a GitHub Codespace
 
+1. **Open Your Repository**: Go to the GitHub repository where your project is located.
+
+2. **Create a Codespace**:
+   - Click on the green "Code" button at the top right of your repository.
+   - Select the "Codespaces" tab.
+   - Click "New codespace" to create a new Codespace environment.
+
+#### Download Dependencies
+
+Once the Codespace is set up and the environment is ready:
+
+1. **Open the Terminal**: In the Codespace environment, you will have a terminal window available at the bottom.
+
+2. **Install Dependencies**:
    ```bash
    pip install flask selenium fake-useragent pandas numpy nltk textblob
    ```
-
-3. **Run Python**
+####Run Python
 
    ```bash
    python app.py
