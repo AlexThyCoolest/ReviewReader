@@ -71,8 +71,6 @@ Before you begin, ensure you have met the following requirements:
 ## 📁 Project Structure
 
 ```
-OYT/
-│
 ├── app.py                 # Main Flask application 
 ├── README.md              # Project documentation
 ├── static/                # Static files (CSS, JS, images)
