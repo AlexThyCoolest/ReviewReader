@@ -63,7 +63,7 @@ Before you begin, ensure you have met the following requirements:
 
 #### Set up a GitHub Codespace
 
-1. **Open Your Repository**: Go to the GitHub repository where your project is located.
+1. **Open This Repository**: Go to this GitHub repository where my project is located.
 
 2. **Create a Codespace**:
    - Click on the green "Code" button at the top right of your repository.
@@ -80,11 +80,13 @@ Once the Codespace is set up and the environment is ready:
    ```bash
    pip install flask selenium fake-useragent pandas numpy nltk textblob
    ```
-####Run Python
+#### Run Python
 
    ```bash
    python app.py
    ```
+
+The application will be available at `http://localhost:2020`.
 
 ## 💻 Usage
 
